@@ -16,7 +16,7 @@ jobs:
             java-version: '8'
             distribution: 'zulu'
 
-         - name: Check Java version
+        - name: Check Java version
            run: java -version    
            
         - name: Setup Node.js
