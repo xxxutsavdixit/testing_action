@@ -14,3 +14,8 @@ jobs:
             node-version: '16.18.0'
         - name: Install dependencies
           run: npm install
+        - uses: actions/setup-java@v4
+          with:
+           distribution: 'zulu' # See 'Supported distributions' for available options
+           java-version: '8' 
+        - run: java HelloWorldApp.java 
